@@ -1,0 +1,12 @@
+@import '~@angular/material/prebuilt-themes/indigo-pink.css';
+
+body {
+  margin: 0;
+}
+
+//Animations
+router-outlet ~ * {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+  }

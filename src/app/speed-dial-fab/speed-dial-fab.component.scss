@@ -1,0 +1,37 @@
+.fab-container {
+    position: fixed;
+    bottom: 15px;
+    right: 15px;
+    z-index: 100;
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+  
+    > div {
+      display: flex;
+      flex-direction: column-reverse;
+      align-items: center;
+      margin-bottom: 5px;
+  //I know, this is hacky. If you've come this far please let me know if you find a better solution to align the icons
+      a {
+        margin-bottom: 17px;
+      }
+    }
+  }
+  .mat-icon {
+      transform: scale(2.5);
+      padding: 0px 0px 3px 0px;
+  }
+  .fab-toggler {
+    float: right;
+    z-index: 100;
+  }
+
+  #fab-dismiss {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 99;
+  }

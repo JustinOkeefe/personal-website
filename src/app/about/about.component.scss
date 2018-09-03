@@ -1,0 +1,114 @@
+@media only screen and (max-width: 480px) {
+  h1 { font-size: 26px !important; }
+  h2 { font-size: 14px !important; }
+}
+
+.hi {
+    text-align: center;
+    font-size: 2.1em;
+    font-family: roboto;
+    line-height: 20px;  
+    color: #b3e5fc;
+    text-shadow: 1px 0 0 #000, 0 -1px 0 #000, 0 1px 0 #000, -1px 0 0 #000;
+    
+  }
+ .message {
+  text-align: center;
+  font-size: 2.5em;
+  font-family: roboto;
+  line-height: 40px;  
+  font-family: roboto Condensed;
+  color: #141026;
+ }
+
+  .blank {
+    opacity: 0.0;
+  }
+  
+  h2 {
+    font-size: 1.7em;
+    line-height: 40px;
+    font-family: roboto Condensed;
+    color: #141026;
+    //text-transform: uppercase;
+  }
+  
+  .background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background: url('../../assets/background.jpg') no-repeat center top;
+    background-size: cover;
+    min-height: 100%;
+
+    content: '';
+    z-index: 0;
+  
+    .actions {
+      text-align: center;
+      margin: 50px;
+      z-index: 1;
+  
+      span {
+        display: inline-block;
+        font-weight: bold;
+        padding: 20px 10px 30px 10px;
+      }
+  
+      a {
+        margin: 0 5px 10px 0;
+  
+        &.actions-main {
+          text-transform: uppercase;
+          padding: 3px 24px;
+        }
+  
+        mat-icon {
+          position: relative;
+          top: 4px;
+        }
+      }
+    }
+  
+    .get-started {
+      max-width: 700px;
+      margin: 50px auto;
+      letter-spacing: 0.01px;
+      overflow-wrap: break-word;
+      z-index: 1;
+      overflow: hidden;
+  
+      code {
+        font-size: 1.0em;
+        display: inline-block;
+        word-wrap: break-word;
+        white-space: normal;
+        margin: 0 0 10px 0;
+        background-color: #b3e5fc;
+        border-radius: 10px;
+        padding: 0 8px 1px;
+      }
+    }
+    
+    .container {
+      position: relative;
+    }
+  }
+  
+  .follow-releases {
+    max-width: 700px;
+    margin: 0 auto 60px auto;
+  
+    p {
+      line-height: 40px;
+  
+      a {
+        border-bottom: 3px solid;
+      }
+    }
+  
+  }
+  
+  

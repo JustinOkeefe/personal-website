@@ -1,0 +1,65 @@
+<div class="example-container">
+  <mat-sidenav-container>
+    <mat-sidenav #sidenav mode="push">
+      <mat-nav-list>
+        <a mat-list-item routerLink="/About">
+          <mat-icon class="icon">home</mat-icon>
+          <span class="label"></span>
+        </a>
+        <a mat-list-item routerLink="/Resume">
+          <mat-icon class="icon">work_outline</mat-icon>
+          <span class="label"></span>
+        </a>
+        <a mat-list-item routerLink="/Examples">
+          <mat-icon class="icon">dashboard</mat-icon>
+          <span class="label"></span>
+        </a>
+      </mat-nav-list>
+    </mat-sidenav>
+    <mat-sidenav-content>
+      <mat-toolbar color="primary">
+        <div fxHide.gt-xs>
+          <button mat-icon-button class="d-md-none" (click)="sidenav.open()">
+            <mat-icon>menu</mat-icon>
+          </button>
+        </div>
+        <div>
+          <a routerLink="/About">
+            <span class="name">Justin O'Keefe</span>
+          </a>
+        </div>
+        <div fxFlex fxLayout fxLayoutAlign="flex-end" fxHide.xs>
+          <ul fxLayout fxLayoutGap="20px" class="navigation-items">
+            <li>
+              <a routerLink="/About">
+                <mat-icon class="icon">home</mat-icon>
+                <span class="label">Home</span>
+              </a>
+            </li>
+            <li>
+              <a routerLink="/Resume">
+                <mat-icon class="icon">work_outline</mat-icon>
+                <span class="label">Resume</span>
+              </a>
+            </li>
+            <li>
+              <a routerLink="/Examples">
+                <mat-icon class="icon">dashboard</mat-icon>
+                <span class="label">Examples</span>
+              </a>
+            </li>
+
+          </ul>
+        </div>
+      </mat-toolbar>
+      <div class="site">
+        <div class="content" [@fadeAnimation]="o.isActivated ? o.activatedRoute : ''">
+          <router-outlet #o="outlet"></router-outlet>
+        </div>
+      </div>
+      <app-speed-dial-fab></app-speed-dial-fab>
+
+
+    </mat-sidenav-content>
+  </mat-sidenav-container>
+</div>

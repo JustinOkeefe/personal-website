@@ -1,0 +1,20 @@
+<div>
+  <div class="container">
+    <div fxLayout="row" fxLayoutAlign="center" class="content">
+      <mat-accordion class="accordion">
+        <mat-expansion-panel>
+          <mat-expansion-panel-header>
+            <mat-panel-title fxLayout.gt-xs="row" fxLayout.xs="column">
+              <h3>Mini Read Me</h3>
+            </mat-panel-title>
+          </mat-expansion-panel-header>
+          <p>This is an embedded D3 visualization. Each node is assigned a number; two nodes are linked if they based on divisiblity.</p>
+          <p>At a high level: a service will return a graph instance and bind user interactions to elements. The model allows
+            for type safety for the data and directives direct elements on how to implement D3 behaviors</p>
+        </mat-expansion-panel>
+      </mat-accordion>
+    </div>
+  </div>
+</div>
+
+<graph [nodes]="nodes" [links]="links"></graph>
