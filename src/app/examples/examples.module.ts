@@ -15,6 +15,7 @@ import { D3Service } from './d3/d3/d3.service.service';
 import { D3_DIRECTIVES } from './d3/d3/directives'
 import { GraphComponent } from './d3/d3/visuals/graph/graph.component'
 import { SHARED_VISUALS } from './d3/d3/visuals/shared'
+import { Title } from '@angular/platform-browser'
 @NgModule({
   imports: [
     CommonModule,
@@ -35,7 +36,7 @@ import { SHARED_VISUALS } from './d3/d3/visuals/shared'
     ...D3_DIRECTIVES
 
   ],
-  providers: [DataService, D3Service],
+  providers: [DataService, D3Service, Title],
 
   entryComponents: [
     PostDialogComponent

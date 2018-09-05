@@ -1,11 +1,11 @@
-<div class="background">
-  <div class="gradient">
-    <div class="container">
-      <h1 class="blank">d </h1>
+<title>{{title}}</title>
+<div class="container">
+    <div class="background">
+
 
       <div class="get-started">
-        <h1 class="hi">Hi, I'm Justin</h1>
-        <h1 class="message">Check out my resume or some of my example projects. I'd love to hear what you think</h1>
+        <!--<h1 class="hi">Hi, I'm Justin</h1>-->
+        <h1 class="hi">Welcome</h1>
         <div class="actions">
           <a mat-raised-button class="actions-main" color="accent" routerLink="../Resume" [ngClass]="routeAnimationsElements">
             My Resume
@@ -13,8 +13,9 @@
           <a mat-raised-button class="actions-main" color="warn" routerLink="../Examples" [ngClass]="routeAnimationsElements">
             Some Angular Applets
           </a>
-          <h2></h2>
+          <div class="sample-title">
           <h2>Try the website out for yourself:</h2>
+        </div>
           <code>git clone
             https://github.com/JustinOkeefe/personal-website.git  
           </code>
@@ -26,5 +27,4 @@
           <code>npm start</code>
         </div>
       </div>
-    </div>
   </div>

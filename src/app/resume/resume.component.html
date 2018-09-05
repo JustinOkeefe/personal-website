@@ -1,11 +1,56 @@
-<div class="row">
-  <div class="col-md-12">
-    <h1></h1>
+
+  <div class="container">
+    <div fxLayout="row" fxLayoutAlign="center center" class="content">
+      <mat-card class="card-intro" >
+          <mat-card-title>Personal Statement</mat-card-title>
+        <p>I have over 6 years of experience within the biotech industry comprised of diverse roles with increasing responsibility. Throughout my career, I have developed a passion for data, visualizations, and creating cool software. </p> 
+      
+          <a mat-raised-button class="actions-main" color="accent" href="mailto:just.okeefe@gmail.com">
+            Contact Me
+          </a>
+      </mat-card>
+    </div>
   </div>
-</div>
+
+  <div class="container">
+    <mat-card>
+        <mat-card-title>Skills</mat-card-title>
+	<div fxLayout="row" fxLayout.xs="column">
+      <mat-card class="lists"fxFlex="33%;" fxFlex.xs="40%">
+          <mat-card-subtitle>Hard</mat-card-subtitle>
+          <mat-list>
+            <mat-list-item>Angular, JavaScript, HTML5/CSS/etc </mat-list-item>
+            <mat-list-item>SQL Server, NoSQL</mat-list-item>
+            <mat-list-item>Python, some R</mat-list-item>
+          </mat-list>
+      </mat-card>
+      <mat-card fxFlex="33%;" fxFlex.xs="40%">
+          <mat-list>
+              <mat-card-subtitle>Tools/Software</mat-card-subtitle>
+              <mat-list-item>Git, SQL Server Management Studio</mat-list-item>
+              <mat-list-item>PAS (DeltaV Suite), MES (Emerson Syncade)</mat-list-item>
+              <mat-list-item>Trackwise, LIMS, Maximo, SAP</mat-list-item>
+              <mat-list-item>Spotfire, some Tableau</mat-list-item>
+            </mat-list>
+      </mat-card>
+      <mat-card fxFlex="33%;" fxFlex.xs="40%">
+          <mat-list>
+            <mat-card-subtitle>Soft</mat-card-subtitle>
+            <mat-list-item>Quality Risk Management</mat-list-item>
+            <mat-list-item>Analytical thinking</mat-list-item>
+            <mat-list-item>Communication</mat-list-item>
+            <mat-list-item>Ability to train end users</mat-list-item>
+            <mat-list-item>Story telling through design</mat-list-item>
+          </mat-list>
+      </mat-card>
+    </div>
+  </mat-card>
+  </div>
+
 <div class="container">
-  <div fxLayout="row" fxLayoutAlign="center center" class="content">
-    <mat-card class="card">
+    <mat-card class="card-resume">
+  <div fxLayout="row" LayoutAlign="center center" class="content">
+    
       <mat-vertical-stepper #stepper>
         <ng-template matStepperIcon="edit">
           <mat-icon>work_outline</mat-icon>
@@ -157,6 +202,7 @@
           </div>
         </mat-step>
       </mat-vertical-stepper>
+    </div>
     </mat-card>
-  </div>
+  
 </div>

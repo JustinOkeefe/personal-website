@@ -1,7 +1,9 @@
 import { Component } from '@angular/core';
 import { fadeAnimation } from './animations';
 import { MatIconRegistry } from "@angular/material/icon";
-import { DomSanitizer } from "@angular/platform-browser";
+import { DomSanitizer, Title} from "@angular/platform-browser";
+
+
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
@@ -9,10 +11,14 @@ import { DomSanitizer } from "@angular/platform-browser";
   animations: [fadeAnimation]
 })
 export class AppComponent {
+
+
   constructor(
     private matIconRegistry: MatIconRegistry,
-    private domSanitizer: DomSanitizer
-  ) {
+    private domSanitizer: DomSanitizer,
+    private titleService: Title
+  ) 
+  {
     this.matIconRegistry.addSvgIcon(
       `github`,
       this.domSanitizer.bypassSecurityTrustResourceUrl("../assets/icons/github-logo.svg")
@@ -25,5 +31,9 @@ export class AppComponent {
       `linkedin`,
       this.domSanitizer.bypassSecurityTrustResourceUrl("../assets/icons/linkedin-logo.svg")
     );
+  }
+
+  public setTitle( newTitle: string) {
+    this.titleService.setTitle( newTitle );
   }
 }

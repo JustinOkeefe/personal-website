@@ -10,3 +10,7 @@ router-outlet ~ * {
     height: 100%;
     width: 100%;
   }
+
+  mat-button mat-button-focus-overlay {
+    background-color: transparent;
+  }

@@ -1,15 +1,31 @@
-.card {
-    min-width: 80%;
-    padding: 10px;
+
+
+  mat-card {
+    margin-left: auto;
+    margin-right: auto;
+    width: 80%;
   }
-  
-  .example-container {
-    display: flex;
-    flex-direction: column;
-    max-height: 500px;
-    min-width: 100%;
+
+  .card-intro {
+    text-align: center;
   }
-  
+
+  mat-card-subtitle  {
+    text-align: center;
+  }
+
+  mat-card-title {
+    text-align: center;
+  }
+
+  mat-list mat-list-item {
+    height: auto !important; /* To avoid calculated height from mat-line-x classes */
+    padding: 7px;
+  }
+
+   .container {
+     padding: 10px;
+   }
   
   a {
     cursor: pointer;
